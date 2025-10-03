@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COC – Creators On Call | Invite-Only Retreats</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set a default font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f9; /* Light grey background */
+        }
+        .text-gradient {
+            /* NEW: Professional Teal/Cyan gradient for the COC brand */
+            background-image: linear-gradient(to right, #06B6D4, #0D9488); /* Cyan to Teal */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        /* Style for the custom message box */
+        #message-box {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased flex flex-col">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">
+                <span class="text-gradient">COC</span> – Creators On Call
+            </h1>
+            <!-- Desktop Navigation -->
+       <nav class="hidden md:flex space-x-8">
+    <a href="#home" class="text-gray-600 hover:text-teal-600 transition duration-150">Home</a>
+    <a href="#features" class="text-gray-600 hover:text-teal-600 transition duration-150">Outcomes</a>
+    <a href="#itinerary" class="text-gray-600 hover:text-teal-600 transition duration-150">Itinerary</a>
+    <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition duration-150">Alumni</a>
+    <a href="#faq" class="text-gray-600 hover:text-teal-600 transition duration-150">FAQ</a> <a href="#trips" class="text-gray-600 hover:text-teal-600 transition duration-150">Trips</a>
+    <a href="#apply" class="text-gray-600 hover:text-teal-600 transition duration-150 font-bold">Apply</a>
+</nav>
+            <!-- CTA Button: Now links to the 'apply' section -->
+            <a href="#apply" class="hidden md:inline-flex px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow-md hover:bg-teal-700 transition duration-150 transform hover:scale-105">
+                Request Invite
+            </a>
+
+            <!-- Mobile Menu Placeholder (Icon) -->
+            <button class="md:hidden text-gray-600 hover:text-teal-600 p-2 rounded-lg transition duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+
+        <!-- Hero Section -->
+        <section class="py-16 sm:py-24 lg:py-32 text-center bg-white" id="home">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                    Your growth circle, <span class="text-gradient">always on call.</span>
+                </h2>
+                <!-- Mission Statement -->
+                <p class="mt-6 text-xl text-gray-500 max-w-3xl mx-auto">
+                    **COC – Creators On Call** is an invite-only creator-business ecosystem. Starting with curated retreats, we bring creators, entrepreneurs, and brands together to **collaborate, create, and grow.**
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <!-- CTA Button: Now links to the 'apply' section -->
+                    <a href="#apply" class="px-8 py-3 text-lg bg-teal-600 text-white font-semibold rounded-full shadow-lg shadow-teal-500/50 hover:bg-teal-700 transition duration-300 transform hover:-translate-y-0.5">
+                        Request Your Invite
+                    </a>
+                    <a href="#features" class="px-8 py-3 text-lg bg-white text-gray-700 border border-gray-200 font-semibold rounded-full hover:bg-gray-50 transition duration-300">
+                        View Ecosystem Benefits
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features/Outcomes Section -->
+        <section class="py-20 bg-gray-50" id="features">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Why Join The COC Ecosystem</h3>
+                    <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Real Opportunities, Real Growth
+                    </p>
+                </div>
+
+                <div class="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Feature 1: Collaboration Outcome -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-100 text-cyan-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M10 20v-2.126M10 20H8v-2.126M14 20v-2.126M14 20h2v-2.126M12 14v6m0-6H6m6 0h6m0-6H6m6 0h6m0-6H6" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-5 text-xl font-semibold text-gray-900">Curated Creator Collabs</h4>
+                        <p class="mt-2 text-base text-gray-500">
+                            Leave the retreat with at least 5 new, high-quality collaboration videos filmed and edited, ready for launch.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2: Sponsorships & Brands -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0h-4m4 0l-4 4m-8-4L4 7m4 0h4m4 0l-4 4m0 0l-4 4m4-4V3" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-5 text-xl font-semibold text-gray-900">Direct Brand Sponsorships</h4>
+                        <p class="mt-2 text-base text-gray-500">
+                            Exclusive access to a network of brands and entrepreneurs looking for high-quality, targeted creator partnerships.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3: Community & Long-Term Connection -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3v-1m18-6H5a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2z" />
+                            </svg>
+                        </div>
+                        <h4 class="mt-5 text-xl font-semibold text-gray-900">Private, Ongoing Support Group</h4>
+                        <p class="mt-2 text-base text-gray-500">
+                            Join a dedicated private community for continuous feedback, growth strategy sessions, and long-term connections.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="py-20 bg-white" id="itinerary">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">The Formula for Growth</h3>
+                    <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Your 3-Day COC Itinerary
+                    </p>
+                    <p class="mt-4 text-lg text-gray-600">
+                        (Example based on our **Rishikesh** retreat—activities adjust to location, but the results stay the same.)
+                    </p>
+                </div>
+
+                <div class="mt-12 space-y-12">
+                    
+                    <div class="border-l-4 border-cyan-500 pl-8 relative">
+                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">1</div>
+                        <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 1: Connection, Content, & Challenge</h4>
+                        <p class="text-gray-700 font-semibold text-lg mb-4">Focus: Breaking the Ice and Collaborative Production</p>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>**Arrival & Vibe Check:** Check-in, welcome kit, and a casual lunch to meet the cohort.</li>
+                            <li>**Vision Boarding:** Set the tone and share your niche, potential, and biggest content achievement.</li>
+                            <li>**The Location Reel Challenge:** Teams dive into their first challenge: a 60-second collaborative reel capturing the location's essence and introducing the "COC" concept.</li>
+                            <li>**Bonfire Networking:** Themed dinner, followed by a bonfire and fun games (like 'Never Have I Ever') to forge deep, relaxed bonds.</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="border-l-4 border-cyan-500 pl-8 relative">
+                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">2</div>
+                        <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 2: Skill Mastery & The Viral Strategy</h4>
+                        <p class="text-gray-700 font-semibold text-lg mb-4">Focus: Peer-to-Peer Learning and High-Impact Content</p>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>**The Skill-Share Session:** Pair up with a creator from a different niche (e.g., editor + writer) to shoot a high-value "How-To" video, forcing hands-on cross-skill collaboration.</li>
+                            <li>**Content Production Block:** Dedicated time with technical crew support (lighting, angles) to film the collaborative content.</li>
+                            <li>**The 100K Views Task:** The signature challenge! Teams create a video with a clear strategy for reaching 100,000 views, pushing the limits of their viral knowledge.</li>
+                            <li>**Community Feedback Lab:** Present and critique all content and viral ideas. Constructive feedback is mandatory—everyone elevates each other.</li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div class="border-l-4 border-cyan-500 pl-8 relative">
+                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">3</div>
+                        <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 3: Showcase, Graduation, & Next Steps</h4>
+                        <p class="text-gray-700 font-semibold text-lg mb-4">Focus: Launching Content and COC Community Onboarding</p>
+                        <ul class="space-y-3 text-gray-600 list-disc list-inside">
+                            <li>**The Final Showcase:** Present the best-edited final content. The winning team gets a feature on the official COC channel!</li>
+                            <li>**Closing Ceremony:** Receive your official COC Certificate to add credibility to your portfolio.</li>
+                            <li>**The Path Forward:** Final speech on community steps, future collaborations, and joining the private COC network.</li>
+                            <li>**Group Photo & Departure.**</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Upcoming Trips Section -->
+        <section class="py-20 bg-white" id="trips">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Your Next Growth Chapter</h3>
+                    <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Upcoming COC Retreats
+                    </p>
+                </div>
+
+                <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Trip Card 1 (Rishikesh) -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
+                        <!-- Link to external video is preserved -->
+                        <a href="https://www.youtube.com/watch?v=RISHIKESH-TRIP-VIDEO" target="_blank">
+                            <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+collaborating+in+Rishikesh,+Himalayan+foothills,+river+Ganges,+drone+shot,+vibrant+sunset,+professional+photography,+realistic" alt="Rishikesh retreat video preview">
+                        </a>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900">Rishikesh: Himalayan Content Lab</h4>
+                            <p class="mt-2 text-gray-500 text-sm">3 Days / 2 Nights</p>
+                            <p class="mt-1 text-gray-500 text-sm">April 15-18, 2026</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-2xl font-bold text-teal-600">₹8,500</span>
+                                <!-- Apply Now button links to the form -->
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trip Card 2 (Lonavla) -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
+                        <a href="https://www.youtube.com/watch?v=LONAVLA-TRIP-VIDEO" target="_blank">
+                            <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+strategizing+in+Lonavla,+Western+Ghats,+misty+hills,+sunrise,+drone+in+air,+professional+photography,+realistic" alt="Lonavla retreat video preview">
+                        </a>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900">Lonavla: Western Ghats Strategy</h4>
+                            <p class="mt-2 text-gray-500 text-sm">3 Days / 2 Nights</p>
+                            <p class="mt-1 text-gray-500 text-sm">May 10-13, 2026</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-2xl font-bold text-teal-600">₹7,200</span>
+                                <!-- Apply Now button links to the form -->
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trip Card 3 (Pondicherry) -->
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
+                        <a href="https://www.youtube.com/watch?v=PONDY-TRIP-VIDEO" target="_blank">
+                            <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+filming+on+Pondicherry+beach,+colonial+architecture,+sunrise,+dynamic+video+shot,+professional+photography,+realistic" alt="Pondicherry retreat video preview">
+                        </a>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-900">Pondicherry: Coastal Content Lab</h4>
+                            <p class="mt-2 text-gray-500 text-sm">3 Days / 2 Nights</p>
+                            <p class="mt-1 text-gray-500 text-sm">June 5-8, 2026</p>
+                            <div class="mt-4 flex items-center justify-between">
+                                <span class="text-2xl font-bold text-teal-600">₹9,800</span>
+                                <!-- Apply Now button links to the form -->
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Request Invite Form Section (id="apply") -->
+        <section class="py-20 bg-gray-100" id="apply">
+<section class="py-20 bg-white" id="faq">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Quick Answers</h3>
+                    <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Your Questions, Answered
+                    </p>
+                </div>
+
+                <div class="mt-12 space-y-6">
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                        <h4 class="text-lg font-bold text-gray-900">Am I eligible for a COC Invite?</h4>
+                        <p class="mt-2 text-gray-700">
+                            COC is generally for **micro-creators (under 100K followers)** who are serious about monetizing and collaborating. We prioritize commitment and quality content over sheer follower count. If you are actively creating, you should apply!
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                        <h4 class="text-lg font-bold text-gray-900">What is included in the trip cost?</h4>
+                        <p class="mt-2 text-gray-700">
+                            The cost covers **3 days/2 nights lodging** in the retreat villa, all **meals**, organized **activities/challenges**, and **on-site professional tech support**. It does **NOT** include your travel cost to and from the specified retreat location (e.g., Lonavla train station or Rishikesh airport).
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                        <h4 class="text-lg font-bold text-gray-900">What happens after I submit my invite request?</h4>
+                        <p class="mt-2 text-gray-700">
+                            Our team reviews your profile within 48 hours. If approved, you will receive a direct email with a link to view available trip dates and process your secure booking and payment.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                        <h4 class="text-lg font-bold text-gray-900">Do I need to bring my own equipment?</h4>
+                        <p class="mt-2 text-gray-700">
+                            Yes, please bring your primary content capture tool (phone, mirrorless camera, etc.). We provide shared lighting, microphones, and basic collaboration props for the challenges.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Exclusive Access</h3>
+                    <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Request Your COC Invite
+                    </p>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Please provide a few details so our team can review your profile and send you a link to our trip offerings.
+                    </p>
+                </div>
+
+                <!-- Message Box for Success/Error -->
+                <div id="message-box" class="mt-4 p-4 rounded-lg text-center font-medium opacity-0"></div>
+
+                <!-- FORM: Added ID for JS handling -->
+                <form id="invite-form" class="mt-8 space-y-6 bg-white p-8 rounded-xl shadow-2xl">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" name="name" id="name" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" name="email" id="email" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                    </div>
+                    <div>
+                        <label for="niche" class="block text-sm font-medium text-gray-700">Content Niche / Topic (e.g., Tech, Travel, Finance)</label>
+                        <input type="text" name="niche" id="niche" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                    </div>
+                    <div>
+                        <label for="link" class="block text-sm font-medium text-gray-700">Link to Main Channel/Profile (YouTube, Instagram, etc.)</label>
+                        <input type="url" name="link" id="link" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                    </div>
+                    
+                    <button type="submit" id="submit-button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-md text-base font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-150">
+                        Submit Invite Request
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800" id="contact">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-lg text-gray-300">Ready to join the ecosystem?</p>
+                <!-- Footer CTA: Now links to the 'apply' section -->
+                <a href="#apply" class="mt-3 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 transition duration-150">
+                    Request Your Invite Today
+                </a>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400">&copy; 2025 COC – Creators On Call. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-150">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-150">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase and Form Submission Logic -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, addDoc, collection, setLogLevel } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Set log level to Debug to see messages in the console
+        setLogLevel('Debug');
+
+        // Global variables for Firebase setup
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+        let db = null;
+        let auth = null;
+        let userId = null;
+
+        const form = document.getElementById('invite-form');
+        const submitButton = document.getElementById('submit-button');
+        const messageBox = document.getElementById('message-box');
+
+        /**
+         * Displays a temporary success or error message to the user.
+         * @param {string} message - The message content.
+         * @param {boolean} isSuccess - True for success (green), false for error (red).
+         */
+        const showMessage = (message, isSuccess) => {
+            messageBox.textContent = message;
+            messageBox.className = 'mt-4 p-4 rounded-lg text-center font-medium transition duration-300 opacity-100';
+            
+            if (isSuccess) {
+                messageBox.classList.add('bg-green-100', 'text-green-800');
+            } else {
+                messageBox.classList.add('bg-red-100', 'text-red-800');
+            }
+
+            // Hide the message after 5 seconds
+            setTimeout(() => {
+                messageBox.classList.remove('opacity-100');
+                messageBox.classList.add('opacity-0');
+            }, 5000);
+        };
+
+        /**
+         * Initializes Firebase and authenticates the user.
+         */
+        async function initializeFirebase() {
+            if (!firebaseConfig) {
+                console.error("Firebase configuration is missing.");
+                showMessage("Database connection error: Configuration missing.", false);
+                return;
+            }
+
+            try {
+                const app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+                
+                if (initialAuthToken) {
+                    await signInWithCustomToken(auth, initialAuthToken);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                onAuthStateChanged(auth, (user) => {
+                    if (user) {
+                        userId = user.uid;
+                        console.log("Firebase initialized. User ID:", userId);
+                    } else {
+                        console.log("No user signed in.");
+                        userId = null;
+                    }
+                });
+            } catch (error) {
+                console.error("Error during Firebase initialization or sign-in:", error);
+                showMessage(`Authentication failed: ${error.message}`, false);
+            }
+        }
+
+        /**
+         * Handles the form submission and saves the data to Firestore.
+         */
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            if (!db || !userId) {
+                showMessage("Database not ready. Please wait a moment and try again.", false);
+                return;
+            }
+
+            // Disable button and show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
+            submitButton.classList.add('opacity-75');
+
+            const data = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                niche: document.getElementById('niche').value,
+                link: document.getElementById('link').value,
+                appliedAt: new Date().toISOString(),
+                status: 'Pending Review',
+                // Storing the user ID for review purposes
+                applicantUserId: userId 
+            };
+
+            // Public data path for applications (accessible by admin/app runner)
+            const collectionPath = `/artifacts/${appId}/public/data/coc_invites`;
+
+            try {
+                const docRef = await addDoc(collection(db, collectionPath), data);
+                console.log("Application submitted with ID: ", docRef.id);
+                
+                showMessage("Success! Your invite request has been submitted and is under review.", true);
+                form.reset(); // Clear the form fields
+
+            } catch (e) {
+                console.error("Error adding document: ", e);
+                showMessage(`Error submitting application. Please try again later.`, false);
+            } finally {
+                // Re-enable button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit Invite Request';
+                submitButton.classList.remove('opacity-75');
+            }
+        }
+
+        // Attach the submission handler to the form
+        if (form) {
+            form.addEventListener('submit', handleFormSubmit);
+        }
+
+        // Start the process
+        initializeFirebase();
+
+    </script>
+</body>
+</html>
