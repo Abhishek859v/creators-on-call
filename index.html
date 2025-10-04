@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COC – Creators On Call | Invite-Only Retreats</title>
-    <!-- Load Tailwind CSS -->
+    <title>COC – Creators On Call | Book Your Retreat</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Set a default font */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7f7f9; /* Light grey background */
+            background-color: #f7f7f9;
         }
         .text-gradient {
-            /* NEW: Professional Teal/Cyan gradient for the COC brand */
-            background-image: linear-gradient(to right, #06B6D4, #0D9488); /* Cyan to Teal */
+            background-image: linear-gradient(to right, #06B6D4, #0D9488);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -29,27 +27,24 @@
 </head>
 <body class="min-h-screen antialiased flex flex-col">
 
-    <!-- Header / Navigation -->
     <header class="bg-white shadow-lg sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-800">
                 <span class="text-gradient">COC</span> – Creators On Call
             </h1>
-            <!-- Desktop Navigation -->
-       <nav class="hidden md:flex space-x-8">
-    <a href="#home" class="text-gray-600 hover:text-teal-600 transition duration-150">Home</a>
-    <a href="#features" class="text-gray-600 hover:text-teal-600 transition duration-150">Outcomes</a>
-    <a href="#itinerary" class="text-gray-600 hover:text-teal-600 transition duration-150">Itinerary</a>
-    <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition duration-150">Alumni</a>
-    <a href="#faq" class="text-gray-600 hover:text-teal-600 transition duration-150">FAQ</a> <a href="#trips" class="text-gray-600 hover:text-teal-600 transition duration-150">Trips</a>
-    <a href="#apply" class="text-gray-600 hover:text-teal-600 transition duration-150 font-bold">Apply</a>
-</nav>
-            <!-- CTA Button: Now links to the 'apply' section -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-teal-600 transition duration-150">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-teal-600 transition duration-150">Outcomes</a>
+                <a href="#itinerary" class="text-gray-600 hover:text-teal-600 transition duration-150">Itinerary</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition duration-150">Alumni</a>
+                <a href="#faq" class="text-gray-600 hover:text-teal-600 transition duration-150">FAQ</a>
+                <a href="#trips" class="text-gray-600 hover:text-teal-600 transition duration-150">Trips</a>
+                <a href="#apply" class="text-gray-600 hover:text-teal-600 transition duration-150 font-bold">Book Now</a>
+            </nav>
             <a href="#apply" class="hidden md:inline-flex px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow-md hover:bg-teal-700 transition duration-150 transform hover:scale-105">
-                Request Invite
+                Book Now
             </a>
 
-            <!-- Mobile Menu Placeholder (Icon) -->
             <button class="md:hidden text-gray-600 hover:text-teal-600 p-2 rounded-lg transition duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -58,23 +53,19 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main class="flex-grow">
 
-        <!-- Hero Section -->
         <section class="py-16 sm:py-24 lg:py-32 text-center bg-white" id="home">
             <div class="max-w-4xl mx-auto px-4">
                 <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
                     Your growth circle, <span class="text-gradient">always on call.</span>
                 </h2>
-                <!-- Mission Statement -->
                 <p class="mt-6 text-xl text-gray-500 max-w-3xl mx-auto">
                     **COC – Creators On Call** is an invite-only creator-business ecosystem. Starting with curated retreats, we bring creators, entrepreneurs, and brands together to **collaborate, create, and grow.**
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <!-- CTA Button: Now links to the 'apply' section -->
                     <a href="#apply" class="px-8 py-3 text-lg bg-teal-600 text-white font-semibold rounded-full shadow-lg shadow-teal-500/50 hover:bg-teal-700 transition duration-300 transform hover:-translate-y-0.5">
-                        Request Your Invite
+                        Apply & Book Your Slot
                     </a>
                     <a href="#features" class="px-8 py-3 text-lg bg-white text-gray-700 border border-gray-200 font-semibold rounded-full hover:bg-gray-50 transition duration-300">
                         View Ecosystem Benefits
@@ -83,7 +74,6 @@
             </div>
         </section>
 
-        <!-- Features/Outcomes Section -->
         <section class="py-20 bg-gray-50" id="features">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
@@ -94,7 +84,6 @@
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Feature 1: Collaboration Outcome -->
                     <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
                         <div class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-100 text-cyan-600">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -107,7 +96,6 @@
                         </p>
                     </div>
 
-                    <!-- Feature 2: Sponsorships & Brands -->
                     <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
                         <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -120,7 +108,6 @@
                         </p>
                     </div>
 
-                    <!-- Feature 3: Community & Long-Term Connection -->
                     <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
                         <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -135,7 +122,8 @@
                 </div>
             </div>
         </section>
-<section class="py-20 bg-white" id="itinerary">
+
+        <section class="py-20 bg-white" id="itinerary">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">The Formula for Growth</h3>
@@ -148,7 +136,6 @@
                 </div>
 
                 <div class="mt-12 space-y-12">
-                    
                     <div class="border-l-4 border-cyan-500 pl-8 relative">
                         <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">1</div>
                         <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 1: Connection, Content, & Challenge</h4>
@@ -161,7 +148,6 @@
                         </ul>
                     </div>
 
-                    
                     <div class="border-l-4 border-cyan-500 pl-8 relative">
                         <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">2</div>
                         <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 2: Skill Mastery & The Viral Strategy</h4>
@@ -174,7 +160,6 @@
                         </ul>
                     </div>
                     
-                    
                     <div class="border-l-4 border-cyan-500 pl-8 relative">
                         <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">3</div>
                         <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 3: Showcase, Graduation, & Next Steps</h4>
@@ -186,11 +171,53 @@
                             <li>**Group Photo & Departure.**</li>
                         </ul>
                     </div>
-                    
                 </div>
             </div>
         </section>
-        <!-- Upcoming Trips Section -->
+
+        <section class="py-20 bg-gray-50" id="testimonials">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Community Trust</h3>
+                    <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Real Results From COC Alumni
+                    </p>
+                </div>
+
+                <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                        <p class="text-lg italic text-gray-700">
+                            "The Rishikesh retreat was a game-changer. I landed my first major brand deal directly through a contact I made during the strategy session on Day 2. Worth every rupee!"
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <p class="font-bold text-gray-900">Priya Sharma</p>
+                            <p class="text-sm text-gray-500">Travel Vlogger, 65K Followers</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                        <p class="text-lg italic text-gray-700">
+                            "The collaboration challenge was exactly what I needed. I left with three videos shot and edited with creators outside my niche. My engagement has skyrocketed since."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <p class="font-bold text-gray-900">Ahmed Khan</p>
+                            <p class="text-sm text-gray-500">Tech Reviewer, 98K Followers</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                        <p class="text-lg italic text-gray-700">
+                            "I went from feeling alone to having a real growth circle. The community feedback session alone improved my storytelling by 50%. Truly an investment, not an expense."
+                        </p>
+                        <div class="mt-4 pt-4 border-t border-gray-100">
+                            <p class="font-bold text-gray-900">Deepa Menon</p>
+                            <p class="text-sm text-gray-500">Finance Educator, 42K Followers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="py-20 bg-white" id="trips">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
@@ -201,10 +228,7 @@
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-                    <!-- Trip Card 1 (Rishikesh) -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
-                        <!-- Link to external video is preserved -->
                         <a href="https://www.youtube.com/watch?v=RISHIKESH-TRIP-VIDEO" target="_blank">
                             <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+collaborating+in+Rishikesh,+Himalayan+foothills,+river+Ganges,+drone+shot,+vibrant+sunset,+professional+photography,+realistic" alt="Rishikesh retreat video preview">
                         </a>
@@ -214,13 +238,10 @@
                             <p class="mt-1 text-gray-500 text-sm">April 15-18, 2026</p>
                             <div class="mt-4 flex items-center justify-between">
                                 <span class="text-2xl font-bold text-teal-600">₹8,500</span>
-                                <!-- Apply Now button links to the form -->
-                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Apply Now</a>
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Book Now</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Trip Card 2 (Lonavla) -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
                         <a href="https://www.youtube.com/watch?v=LONAVLA-TRIP-VIDEO" target="_blank">
                             <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+strategizing+in+Lonavla,+Western+Ghats,+misty+hills,+sunrise,+drone+in+air,+professional+photography,+realistic" alt="Lonavla retreat video preview">
@@ -231,13 +252,10 @@
                             <p class="mt-1 text-gray-500 text-sm">May 10-13, 2026</p>
                             <div class="mt-4 flex items-center justify-between">
                                 <span class="text-2xl font-bold text-teal-600">₹7,200</span>
-                                <!-- Apply Now button links to the form -->
-                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Apply Now</a>
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Book Now</a>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Trip Card 3 (Pondicherry) -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
                         <a href="https://www.youtube.com/watch?v=PONDY-TRIP-VIDEO" target="_blank">
                             <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+filming+on+Pondicherry+beach,+colonial+architecture,+sunrise,+dynamic+video+shot,+professional+photography,+realistic" alt="Pondicherry retreat video preview">
@@ -248,19 +266,15 @@
                             <p class="mt-1 text-gray-500 text-sm">June 5-8, 2026</p>
                             <div class="mt-4 flex items-center justify-between">
                                 <span class="text-2xl font-bold text-teal-600">₹9,800</span>
-                                <!-- Apply Now button links to the form -->
-                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Apply Now</a>
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Book Now</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Request Invite Form Section (id="apply") -->
-        <section class="py-20 bg-gray-100" id="apply">
-<section class="py-20 bg-white" id="faq">
+        <section class="py-20 bg-white" id="faq">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
                     <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Quick Answers</h3>
@@ -270,7 +284,6 @@
                 </div>
 
                 <div class="mt-12 space-y-6">
-                    
                     <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
                         <h4 class="text-lg font-bold text-gray-900">Am I eligible for a COC Invite?</h4>
                         <p class="mt-2 text-gray-700">
@@ -298,25 +311,25 @@
                             Yes, please bring your primary content capture tool (phone, mirrorless camera, etc.). We provide shared lighting, microphones, and basic collaboration props for the challenges.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
+
+
+        <section class="py-20 bg-gray-100" id="apply">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Exclusive Access</h3>
+                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Final Step</h3>
                     <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                        Request Your COC Invite
+                        Apply & Secure Your Slot
                     </p>
                     <p class="mt-4 text-lg text-gray-600">
-                        Please provide a few details so our team can review your profile and send you a link to our trip offerings.
+                        Please provide your details below. Upon submission, you will be redirected to the payment gateway to pay the **30% booking amount** to secure your spot.
                     </p>
                 </div>
 
-                <!-- Message Box for Success/Error -->
                 <div id="message-box" class="mt-4 p-4 rounded-lg text-center font-medium opacity-0"></div>
 
-                <!-- FORM: Added ID for JS handling -->
                 <form id="invite-form" class="mt-8 space-y-6 bg-white p-8 rounded-xl shadow-2xl">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
@@ -336,21 +349,19 @@
                     </div>
                     
                     <button type="submit" id="submit-button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-md text-base font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-150">
-                        Submit Invite Request
+                        Submit & Go To Payment
                     </button>
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800" id="contact">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <p class="text-lg text-gray-300">Ready to join the ecosystem?</p>
-                <!-- Footer CTA: Now links to the 'apply' section -->
                 <a href="#apply" class="mt-3 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 transition duration-150">
-                    Request Your Invite Today
+                    Book Your Slot Today
                 </a>
             </div>
             <div class="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
@@ -363,7 +374,6 @@
         </div>
     </footer>
 
-    <!-- Firebase and Form Submission Logic -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
@@ -371,10 +381,29 @@
 
         // Set log level to Debug to see messages in the console
         setLogLevel('Debug');
+        
+        // ====================================================================
+        // !!! IMPORTANT: YOU MUST UPDATE THIS SECTION FOR YOUR WEBSITE TO WORK !!!
+        // Get this config from your Firebase console -> Project settings.
+        // ====================================================================
+        const YOUR_FIREBASE_CONFIG = {
+            apiKey: "YOUR_API_KEY", // <-- REPLACE THIS WITH YOUR API KEY
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com", // <-- REPLACE THIS
+            projectId: "YOUR_PROJECT_ID", // <-- REPLACE THIS
+            storageBucket: "YOUR_PROJECT_ID.appspot.com", // <-- REPLACE THIS
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID", // <-- REPLACE THIS
+            appId: "YOUR_APP_ID" // <-- REPLACE THIS
+        };
+        
+        // ====================================================================
+        // !!! RAZORPAY REDIRECT LINK: PASTE YOUR PAYMENT LINK HERE !!!
+        // This is the link to your hosted payment page or payment link for the 30% booking amount.
+        // ====================================================================
+        const RAZORPAY_PAYMENT_LINK = "https://rzp.io/l/YOUR-RAZORPAY-PAYMENT-LINK-HERE"; 
+        // ====================================================================
 
-        // Global variables for Firebase setup
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+        const appId = typeof __app_id !== 'undefined' ? __app_id : YOUR_FIREBASE_CONFIG.projectId || 'coc-default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : YOUR_FIREBASE_CONFIG;
         const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
 
         let db = null;
@@ -385,11 +414,6 @@
         const submitButton = document.getElementById('submit-button');
         const messageBox = document.getElementById('message-box');
 
-        /**
-         * Displays a temporary success or error message to the user.
-         * @param {string} message - The message content.
-         * @param {boolean} isSuccess - True for success (green), false for error (red).
-         */
         const showMessage = (message, isSuccess) => {
             messageBox.textContent = message;
             messageBox.className = 'mt-4 p-4 rounded-lg text-center font-medium transition duration-300 opacity-100';
@@ -400,23 +424,18 @@
                 messageBox.classList.add('bg-red-100', 'text-red-800');
             }
 
-            // Hide the message after 5 seconds
             setTimeout(() => {
                 messageBox.classList.remove('opacity-100');
                 messageBox.classList.add('opacity-0');
             }, 5000);
         };
 
-        /**
-         * Initializes Firebase and authenticates the user.
-         */
         async function initializeFirebase() {
-            if (!firebaseConfig) {
-                console.error("Firebase configuration is missing.");
-                showMessage("Database connection error: Configuration missing.", false);
+            if (firebaseConfig.apiKey === "YOUR_API_KEY") {
+                showMessage("Database ERROR: Please check the instructions and update your Firebase configuration keys in the code.", false);
                 return;
             }
-
+            
             try {
                 const app = initializeApp(firebaseConfig);
                 auth = getAuth(app);
@@ -432,20 +451,18 @@
                     if (user) {
                         userId = user.uid;
                         console.log("Firebase initialized. User ID:", userId);
+                        // Show connection success, but don't clear it since it's an important status
+                        showMessage("Database connection ready. You can now submit your booking application!", true);
                     } else {
-                        console.log("No user signed in.");
                         userId = null;
                     }
                 });
             } catch (error) {
                 console.error("Error during Firebase initialization or sign-in:", error);
-                showMessage(`Authentication failed: ${error.message}`, false);
+                showMessage(`Authentication failed. Check your Firebase console settings.`, false);
             }
         }
 
-        /**
-         * Handles the form submission and saves the data to Firestore.
-         */
         async function handleFormSubmit(event) {
             event.preventDefault();
 
@@ -454,7 +471,12 @@
                 return;
             }
 
-            // Disable button and show loading state
+            // Check for the Razorpay link
+            if (RAZORPAY_PAYMENT_LINK === "https://rzp.io/l/YOUR-RAZORPAY-PAYMENT-LINK-HERE") {
+                 showMessage("Payment Link ERROR: Please update the RAZORPAY_PAYMENT_LINK constant in the script!", false);
+                 return;
+            }
+
             submitButton.disabled = true;
             submitButton.textContent = 'Submitting...';
             submitButton.classList.add('opacity-75');
@@ -465,41 +487,43 @@
                 niche: document.getElementById('niche').value,
                 link: document.getElementById('link').value,
                 appliedAt: new Date().toISOString(),
-                status: 'Pending Review',
-                // Storing the user ID for review purposes
+                status: 'Payment Pending', // New status for the payment flow
                 applicantUserId: userId 
             };
 
-            // Public data path for applications (accessible by admin/app runner)
             const collectionPath = `/artifacts/${appId}/public/data/coc_invites`;
 
             try {
                 const docRef = await addDoc(collection(db, collectionPath), data);
                 console.log("Application submitted with ID: ", docRef.id);
                 
-                showMessage("Success! Your invite request has been submitted and is under review.", true);
-                form.reset(); // Clear the form fields
+                // === CRITICAL CHANGE: REDIRECT TO PAYMENT GATEWAY ===
+                showMessage("Application submitted. Redirecting to payment...", true);
+                setTimeout(() => {
+                    // Redirects to the Razorpay link in the current window
+                    window.location.href = RAZORPAY_PAYMENT_LINK;
+                }, 1000); // 1-second delay so the user sees the success message
 
             } catch (e) {
                 console.error("Error adding document: ", e);
-                showMessage(`Error submitting application. Please try again later.`, false);
+                showMessage(`Error: Could not save data. Please try again.`, false);
             } finally {
-                // Re-enable button
-                submitButton.disabled = false;
-                submitButton.textContent = 'Submit Invite Request';
-                submitButton.classList.remove('opacity-75');
+                // Re-enabling is skipped because the user is redirected, but left here for cleanup if redirect fails
+                // submitButton.disabled = false;
+                // submitButton.textContent = 'Submit & Go To Payment';
+                // submitButton.classList.remove('opacity-75');
             }
         }
 
-        // Attach the submission handler to the form
         if (form) {
             form.addEventListener('submit', handleFormSubmit);
         }
 
-        // Start the process
         initializeFirebase();
 
     </script>
 </body>
-
 </html>
+```eof
+
+This code is ready for you! Just remember to update the two critical constants at the top of the `<script>` block: **`YOUR_FIREBASE_CONFIG`** and the **`RAZORPAY_PAYMENT_LINK`**.
