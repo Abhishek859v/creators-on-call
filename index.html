@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COC – Creators On Call | Book Your Retreat</title>
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Set a default font */
@@ -12,8 +13,16 @@
             font-family: 'Inter', sans-serif;
             background-color: #f7f7f9;
         }
+        /* Custom colors based on the user's provided palette */
+        .bg-primary-dark { background-color: #1D5458; }
+        .text-primary-dark { color: #1D5458; }
+        .bg-cta-red { background-color: #F45C4B; }
+        .hover-bg-cta-red-darker:hover { background-color: #E24B3A; }
+        .border-accent { border-color: #58B39B; }
+
         .text-gradient {
-            background-image: linear-gradient(to right, #06B6D4, #0D9488);
+            /* Using the Dark Teal/Deep Teal and the Mint/Bright Teal for a sophisticated gradient */
+            background-image: linear-gradient(to right, #1D5458, #58B39B); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -27,25 +36,29 @@
 </head>
 <body class="min-h-screen antialiased flex flex-col">
 
+    <!-- Header / Navigation -->
     <header class="bg-white shadow-lg sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-800">
-                <span class="text-gradient">COC</span> – Creators On Call
+                <span class="text-primary-dark">COC</span> – Creators On Call
             </h1>
+            <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-8">
-                <a href="#home" class="text-gray-600 hover:text-teal-600 transition duration-150">Home</a>
-                <a href="#features" class="text-gray-600 hover:text-teal-600 transition duration-150">Outcomes</a>
-                <a href="#itinerary" class="text-gray-600 hover:text-teal-600 transition duration-150">Itinerary</a>
-                <a href="#testimonials" class="text-gray-600 hover:text-teal-600 transition duration-150">Alumni</a>
-                <a href="#faq" class="text-gray-600 hover:text-teal-600 transition duration-150">FAQ</a>
-                <a href="#trips" class="text-gray-600 hover:text-teal-600 transition duration-150">Trips</a>
-                <a href="#apply" class="text-gray-600 hover:text-teal-600 transition duration-150 font-bold">Book Now</a>
+                <a href="#home" class="text-gray-600 hover:text-primary-dark transition duration-150">Home</a>
+                <a href="#features" class="text-gray-600 hover:text-primary-dark transition duration-150">Outcomes</a>
+                <a href="#itinerary" class="text-gray-600 hover:text-primary-dark transition duration-150">Itinerary</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-primary-dark transition duration-150">Alumni</a>
+                <a href="#faq" class="text-gray-600 hover:text-primary-dark transition duration-150">FAQ</a>
+                <a href="#trips" class="text-gray-600 hover:text-primary-dark transition duration-150">Trips</a>
+                <a href="#apply" class="text-gray-600 hover:text-primary-dark transition duration-150 font-bold">Book Now</a>
             </nav>
-            <a href="#apply" class="hidden md:inline-flex px-4 py-2 bg-teal-600 text-white font-semibold rounded-full shadow-md hover:bg-teal-700 transition duration-150 transform hover:scale-105">
+            <!-- CTA Button: Updated to Coral Red -->
+            <a href="#apply" class="hidden md:inline-flex px-4 py-2 bg-cta-red text-white font-semibold rounded-full shadow-md hover-bg-cta-red-darker transition duration-150 transform hover:scale-105">
                 Book Now
             </a>
 
-            <button class="md:hidden text-gray-600 hover:text-teal-600 p-2 rounded-lg transition duration-150">
+            <!-- Mobile Menu Placeholder (Icon) -->
+            <button class="md:hidden text-gray-600 hover:text-primary-dark p-2 rounded-lg transition duration-150">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
@@ -53,18 +66,22 @@
         </div>
     </header>
 
+    <!-- Main Content Area -->
     <main class="flex-grow">
 
+        <!-- Hero Section -->
         <section class="py-16 sm:py-24 lg:py-32 text-center bg-white" id="home">
             <div class="max-w-4xl mx-auto px-4">
                 <h2 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
                     Your growth circle, <span class="text-gradient">always on call.</span>
                 </h2>
+                <!-- Mission Statement -->
                 <p class="mt-6 text-xl text-gray-500 max-w-3xl mx-auto">
                     **COC – Creators On Call** is an invite-only creator-business ecosystem. Starting with curated retreats, we bring creators, entrepreneurs, and brands together to **collaborate, create, and grow.**
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#apply" class="px-8 py-3 text-lg bg-teal-600 text-white font-semibold rounded-full shadow-lg shadow-teal-500/50 hover:bg-teal-700 transition duration-300 transform hover:-translate-y-0.5">
+                    <!-- CTA Button: Updated to Coral Red -->
+                    <a href="#apply" class="px-8 py-3 text-lg bg-cta-red text-white font-semibold rounded-full shadow-lg shadow-cta-red/50 hover-bg-cta-red-darker transition duration-300 transform hover:-translate-y-0.5">
                         Apply & Book Your Slot
                     </a>
                     <a href="#features" class="px-8 py-3 text-lg bg-white text-gray-700 border border-gray-200 font-semibold rounded-full hover:bg-gray-50 transition duration-300">
@@ -74,18 +91,20 @@
             </div>
         </section>
 
+        <!-- Features/Outcomes Section -->
         <section class="py-20 bg-gray-50" id="features">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Why Join The COC Ecosystem</h3>
+                    <h3 class="text-base text-primary-dark font-semibold tracking-wide uppercase">Why Join The COC Ecosystem</h3>
                     <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
                         Real Opportunities, Real Growth
                     </p>
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Feature 1: Collaboration Outcome -->
                     <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-100 text-cyan-600">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-primary-dark text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M10 20v-2.126M10 20H8v-2.126M14 20v-2.126M14 20h2v-2.126M12 14v6m0-6H6m6 0h6m0-6H6m6 0h6m0-6H6" />
                             </svg>
@@ -96,8 +115,9 @@
                         </p>
                     </div>
 
+                    <!-- Feature 2: Sponsorships & Brands -->
                     <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-green-100 text-green-600">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-cta-red text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0h-4m4 0l-4 4m-8-4L4 7m4 0h4m4 0l-4 4m0 0l-4 4m4-4V3" />
                             </svg>
@@ -108,8 +128,9 @@
                         </p>
                     </div>
 
+                    <!-- Feature 3: Community & Long-Term Connection -->
                     <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-accent text-white" style="background-color: #58B39B;">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3v-1m18-6H5a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2z" />
                             </svg>
@@ -123,10 +144,11 @@
             </div>
         </section>
 
+        <!-- Itinerary Section -->
         <section class="py-20 bg-white" id="itinerary">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">The Formula for Growth</h3>
+                    <h3 class="text-base text-primary-dark font-semibold tracking-wide uppercase">The Formula for Growth</h3>
                     <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
                         Your 3-Day COC Itinerary
                     </p>
@@ -136,8 +158,10 @@
                 </div>
 
                 <div class="mt-12 space-y-12">
-                    <div class="border-l-4 border-cyan-500 pl-8 relative">
-                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">1</div>
+                    
+                    <!-- Day 1: Connection, Community & The First Challenge -->
+                    <div class="border-l-4 border-accent pl-8 relative">
+                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-accent flex items-center justify-center text-white font-bold text-sm" style="background-color: #58B39B;">1</div>
                         <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 1: Connection, Content, & Challenge</h4>
                         <p class="text-gray-700 font-semibold text-lg mb-4">Focus: Breaking the Ice and Collaborative Production</p>
                         <ul class="space-y-3 text-gray-600 list-disc list-inside">
@@ -148,8 +172,10 @@
                         </ul>
                     </div>
 
-                    <div class="border-l-4 border-cyan-500 pl-8 relative">
-                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">2</div>
+                    
+                    <!-- Day 2: The Core Learning & Hands-On Work -->
+                    <div class="border-l-4 border-accent pl-8 relative">
+                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-accent flex items-center justify-center text-white font-bold text-sm" style="background-color: #58B39B;">2</div>
                         <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 2: Skill Mastery & The Viral Strategy</h4>
                         <p class="text-gray-700 font-semibold text-lg mb-4">Focus: Peer-to-Peer Learning and High-Impact Content</p>
                         <ul class="space-y-3 text-gray-600 list-disc list-inside">
@@ -160,8 +186,10 @@
                         </ul>
                     </div>
                     
-                    <div class="border-l-4 border-cyan-500 pl-8 relative">
-                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">3</div>
+                    
+                    <!-- Day 3: The Showcase & The Future -->
+                    <div class="border-l-4 border-accent pl-8 relative">
+                        <div class="absolute -left-3 top-0 h-6 w-6 rounded-full bg-accent flex items-center justify-center text-white font-bold text-sm" style="background-color: #58B39B;">3</div>
                         <h4 class="text-2xl font-extrabold text-gray-900 mb-2">Day 3: Showcase, Graduation, & Next Steps</h4>
                         <p class="text-gray-700 font-semibold text-lg mb-4">Focus: Launching Content and COC Community Onboarding</p>
                         <ul class="space-y-3 text-gray-600 list-disc list-inside">
@@ -171,21 +199,25 @@
                             <li>**Group Photo & Departure.**</li>
                         </ul>
                     </div>
+                    
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials / Social Proof Section -->
         <section class="py-20 bg-gray-50" id="testimonials">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Community Trust</h3>
+                    <h3 class="text-base text-primary-dark font-semibold tracking-wide uppercase">Community Trust</h3>
                     <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
                         Real Results From COC Alumni
                     </p>
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+
+                    <!-- Testimonial Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cta-red">
                         <p class="text-lg italic text-gray-700">
                             "The Rishikesh retreat was a game-changer. I landed my first major brand deal directly through a contact I made during the strategy session on Day 2. Worth every rupee!"
                         </p>
@@ -195,7 +227,8 @@
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                    <!-- Testimonial Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cta-red">
                         <p class="text-lg italic text-gray-700">
                             "The collaboration challenge was exactly what I needed. I left with three videos shot and edited with creators outside my niche. My engagement has skyrocketed since."
                         </p>
@@ -205,7 +238,8 @@
                         </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                    <!-- Testimonial Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-cta-red">
                         <p class="text-lg italic text-gray-700">
                             "I went from feeling alone to having a real growth circle. The community feedback session alone improved my storytelling by 50%. Truly an investment, not an expense."
                         </p>
@@ -214,20 +248,24 @@
                             <p class="text-sm text-gray-500">Finance Educator, 42K Followers</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- Upcoming Trips Section -->
         <section class="py-20 bg-white" id="trips">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Your Next Growth Chapter</h3>
+                    <h3 class="text-base text-primary-dark font-semibold tracking-wide uppercase">Your Next Growth Chapter</h3>
                     <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
                         Upcoming COC Retreats
                     </p>
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Trip Card 1 (Rishikesh) -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
                         <a href="https://www.youtube.com/watch?v=RISHIKESH-TRIP-VIDEO" target="_blank">
                             <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+collaborating+in+Rishikesh,+Himalayan+foothills,+river+Ganges,+drone+shot,+vibrant+sunset,+professional+photography,+realistic" alt="Rishikesh retreat video preview">
@@ -237,11 +275,14 @@
                             <p class="mt-2 text-gray-500 text-sm">3 Days / 2 Nights</p>
                             <p class="mt-1 text-gray-500 text-sm">April 15-18, 2026</p>
                             <div class="mt-4 flex items-center justify-between">
-                                <span class="text-2xl font-bold text-teal-600">₹8,500</span>
-                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Book Now</a>
+                                <span class="text-2xl font-bold text-cta-red">₹8,500</span>
+                                <!-- Updated CTA button color -->
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-cta-red rounded-full hover-bg-cta-red-darker transition duration-150">Book Now</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Trip Card 2 (Lonavla) -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
                         <a href="https://www.youtube.com/watch?v=LONAVLA-TRIP-VIDEO" target="_blank">
                             <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+strategizing+in+Lonavla,+Western+Ghats,+misty+hills,+sunrise,+drone+in+air,+professional+photography,+realistic" alt="Lonavla retreat video preview">
@@ -251,11 +292,14 @@
                             <p class="mt-2 text-gray-500 text-sm">3 Days / 2 Nights</p>
                             <p class="mt-1 text-gray-500 text-sm">May 10-13, 2026</p>
                             <div class="mt-4 flex items-center justify-between">
-                                <span class="text-2xl font-bold text-teal-600">₹7,200</span>
-                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Book Now</a>
+                                <span class="text-2xl font-bold text-cta-red">₹7,200</span>
+                                <!-- Updated CTA button color -->
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-cta-red rounded-full hover-bg-cta-red-darker transition duration-150">Book Now</a>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Trip Card 3 (Pondicherry) -->
                     <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden border border-gray-100">
                         <a href="https://www.youtube.com/watch?v=PONDY-TRIP-VIDEO" target="_blank">
                             <img class="h-48 w-full object-cover" src="https://image.pollinations.ai/prompt/Indian+content+creators+filming+on+Pondicherry+beach,+colonial+architecture,+sunrise,+dynamic+video+shot,+professional+photography,+realistic" alt="Pondicherry retreat video preview">
@@ -265,61 +309,70 @@
                             <p class="mt-2 text-gray-500 text-sm">3 Days / 2 Nights</p>
                             <p class="mt-1 text-gray-500 text-sm">June 5-8, 2026</p>
                             <div class="mt-4 flex items-center justify-between">
-                                <span class="text-2xl font-bold text-teal-600">₹9,800</span>
-                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition duration-150">Book Now</a>
+                                <span class="text-2xl font-bold text-cta-red">₹9,800</span>
+                                <!-- Updated CTA button color -->
+                                <a href="#apply" class="px-6 py-2 text-sm font-semibold text-white bg-cta-red rounded-full hover-bg-cta-red-darker transition duration-150">Book Now</a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
-
+        
+        <!-- FAQ Section -->
         <section class="py-20 bg-white" id="faq">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Quick Answers</h3>
+                    <h3 class="text-base text-primary-dark font-semibold tracking-wide uppercase">Quick Answers</h3>
                     <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
                         Your Questions, Answered
                     </p>
                 </div>
 
                 <div class="mt-12 space-y-6">
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                    
+                    <!-- Question 1: Eligibility -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-cta-red">
                         <h4 class="text-lg font-bold text-gray-900">Am I eligible for a COC Invite?</h4>
                         <p class="mt-2 text-gray-700">
                             COC is generally for **micro-creators (under 100K followers)** who are serious about monetizing and collaborating. We prioritize commitment and quality content over sheer follower count. If you are actively creating, you should apply!
                         </p>
                     </div>
 
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                    <!-- Question 2: Cost Includes -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-cta-red">
                         <h4 class="text-lg font-bold text-gray-900">What is included in the trip cost?</h4>
                         <p class="mt-2 text-gray-700">
                             The cost covers **3 days/2 nights lodging** in the retreat villa, all **meals**, organized **activities/challenges**, and **on-site professional tech support**. It does **NOT** include your travel cost to and from the specified retreat location (e.g., Lonavla train station or Rishikesh airport).
                         </p>
                     </div>
                     
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                    <!-- Question 3: Next Steps After Applying -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-cta-red">
                         <h4 class="text-lg font-bold text-gray-900">What happens after I submit my invite request?</h4>
                         <p class="mt-2 text-gray-700">
                             Our team reviews your profile within 48 hours. If approved, you will receive a direct email with a link to view available trip dates and process your secure booking and payment.
                         </p>
                     </div>
 
-                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-teal-500">
+                    <!-- Question 4: Equipment -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md border-l-4 border-cta-red">
                         <h4 class="text-lg font-bold text-gray-900">Do I need to bring my own equipment?</h4>
                         <p class="mt-2 text-gray-700">
                             Yes, please bring your primary content capture tool (phone, mirrorless camera, etc.). We provide shared lighting, microphones, and basic collaboration props for the challenges.
                         </p>
                     </div>
+
                 </div>
             </div>
         </section>
 
-
+        <!-- Request Invite Form Section (id="apply") -->
         <section class="py-20 bg-gray-100" id="apply">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center">
-                    <h3 class="text-base text-teal-600 font-semibold tracking-wide uppercase">Final Step</h3>
+                    <h3 class="text-base text-primary-dark font-semibold tracking-wide uppercase">Final Step</h3>
                     <p class="mt-2 text-3xl font-extrabold text-gray-900 sm:text-4xl">
                         Apply & Secure Your Slot
                     </p>
@@ -328,27 +381,30 @@
                     </p>
                 </div>
 
+                <!-- Message Box for Success/Error -->
                 <div id="message-box" class="mt-4 p-4 rounded-lg text-center font-medium opacity-0"></div>
 
+                <!-- FORM: Added ID for JS handling -->
                 <form id="invite-form" class="mt-8 space-y-6 bg-white p-8 rounded-xl shadow-2xl">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                        <input type="text" name="name" id="name" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                        <input type="text" name="name" id="name" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-primary-dark focus:border-primary-dark">
                     </div>
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                        <input type="email" name="email" id="email" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                        <input type="email" name="email" id="email" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-primary-dark focus:border-primary-dark">
                     </div>
                     <div>
                         <label for="niche" class="block text-sm font-medium text-gray-700">Content Niche / Topic (e.g., Tech, Travel, Finance)</label>
-                        <input type="text" name="niche" id="niche" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                        <input type="text" name="niche" id="niche" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-primary-dark focus:border-primary-dark">
                     </div>
                     <div>
                         <label for="link" class="block text-sm font-medium text-gray-700">Link to Main Channel/Profile (YouTube, Instagram, etc.)</label>
-                        <input type="url" name="link" id="link" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-teal-500 focus:border-teal-500">
+                        <input type="url" name="link" id="link" required class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-primary-dark focus:border-primary-dark">
                     </div>
                     
-                    <button type="submit" id="submit-button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-md text-base font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-150">
+                    <!-- Updated button color -->
+                    <button type="submit" id="submit-button" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-md text-base font-medium text-white bg-cta-red hover-bg-cta-red-darker focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cta-red transition duration-150">
                         Submit & Go To Payment
                     </button>
                 </form>
@@ -356,11 +412,13 @@
         </section>
     </main>
 
-    <footer class="bg-gray-800" id="contact">
+    <!-- Footer -->
+    <footer class="bg-primary-dark" id="contact">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <p class="text-lg text-gray-300">Ready to join the ecosystem?</p>
-                <a href="#apply" class="mt-3 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 transition duration-150">
+                <!-- Updated CTA button color -->
+                <a href="#apply" class="mt-3 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-cta-red hover-bg-cta-red-darker transition duration-150">
                     Book Your Slot Today
                 </a>
             </div>
@@ -374,6 +432,7 @@
         </div>
     </footer>
 
+    <!-- Firebase and Form Submission Logic -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
@@ -451,7 +510,6 @@
                     if (user) {
                         userId = user.uid;
                         console.log("Firebase initialized. User ID:", userId);
-                        // Show connection success, but don't clear it since it's an important status
                         showMessage("Database connection ready. You can now submit your booking application!", true);
                     } else {
                         userId = null;
@@ -471,7 +529,6 @@
                 return;
             }
 
-            // Check for the Razorpay link
             if (RAZORPAY_PAYMENT_LINK === "https://rzp.io/l/YOUR-RAZORPAY-PAYMENT-LINK-HERE") {
                  showMessage("Payment Link ERROR: Please update the RAZORPAY_PAYMENT_LINK constant in the script!", false);
                  return;
@@ -487,7 +544,7 @@
                 niche: document.getElementById('niche').value,
                 link: document.getElementById('link').value,
                 appliedAt: new Date().toISOString(),
-                status: 'Payment Pending', // New status for the payment flow
+                status: 'Payment Pending', 
                 applicantUserId: userId 
             };
 
@@ -497,22 +554,16 @@
                 const docRef = await addDoc(collection(db, collectionPath), data);
                 console.log("Application submitted with ID: ", docRef.id);
                 
-                // === CRITICAL CHANGE: REDIRECT TO PAYMENT GATEWAY ===
+                // Redirects to the Razorpay link in the current window
                 showMessage("Application submitted. Redirecting to payment...", true);
                 setTimeout(() => {
-                    // Redirects to the Razorpay link in the current window
                     window.location.href = RAZORPAY_PAYMENT_LINK;
                 }, 1000); // 1-second delay so the user sees the success message
 
             } catch (e) {
                 console.error("Error adding document: ", e);
                 showMessage(`Error: Could not save data. Please try again.`, false);
-            } finally {
-                // Re-enabling is skipped because the user is redirected, but left here for cleanup if redirect fails
-                // submitButton.disabled = false;
-                // submitButton.textContent = 'Submit & Go To Payment';
-                // submitButton.classList.remove('opacity-75');
-            }
+            } 
         }
 
         if (form) {
@@ -524,6 +575,3 @@
     </script>
 </body>
 </html>
-```eof
-
-This code is ready for you! Just remember to update the two critical constants at the top of the `<script>` block: **`YOUR_FIREBASE_CONFIG`** and the **`RAZORPAY_PAYMENT_LINK`**.
